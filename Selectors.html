@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Crash Course | Selectors</title>
+
+    <!--Importing JQuery-->
+    <script src="JQueryAssets/jquery-3.6.1.min.js"></script>
+
+    <!--Importing css style file-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-color">
+    <header>
+        <h1>JQuery Crash Course</h1>
+        <nav class="navbar">
+            <a href="index.html"><button class="btn">Index</button></a>
+            <button class="btn" id="selcbtn">Selectors</button>
+            <a href="Events.html"><button class="btn">Events</button></a>
+            <a href="FormEvents.html"><button class="btn">Form Events</button></a>
+            <a href="DOMman.html"><button class="btn">DOM Manipulation</button></a>
+            <a href="Animations.html"><button class="btn">Animations</button></a>
+            <a href="Ajax.html"><button class="btn">Ajax</button></a>
+        </nav>
+    </header>
+    <div id="container">
+        <h1 id="heading1">Heading One</h1>
+        <p id="para1">Lorem ipsum dolor sit amet, <span>consectetur adipiscing elit</span> , sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum.</p>
+
+        <h1 class="heading2">Heading Two</h1>
+        <p class="para2">Lorem ipsum <span> dolor sit amet, consectetur </span> adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum.</p>
+
+        <ul id="list">
+            <li>List item One</li>
+            <li>List item Two</li>
+            <li>List item Three</li>
+            <li>List item Four</li>
+            <li>List item Five</li>
+            <li>List item Six</li>
+            <li>List item Seven</li>
+        </ul>
+
+        <input type="text" required>
+        <input class="btn" type="button" value="Button">
+        <input class="btn" type="submit" value="Submit">
+
+        <a href="https://www.google.com" class="a-style">Google</a>
+        <a href="https://www.github.com" class="a-style">GitHub</a>
+    </div>
+
+    <script>
+        //for selecting The elements:
+        //$('h1').hide();
+        //------------------------
+        //for selecting the ids in tags:
+        //$('h1#heading1').hide();
+        //---------------------------
+        //for selecting classes in tags:
+        //$('h1.heading2').hide();
+        //-----------------------------
+        //for changing span tags in parargraph(Only Those Who Are Within The Paragraph):
+        $('p span').css('color', 'red');
+        //------------------------------
+        //for selecting & changing the color & bg-color of li's of our ul:
+        $('ul#list li:first').css('color', 'black');
+        $('ul#list li:last').css('color', 'black');
+        $('ul#list li:even').css('background-color', '#cccccc');
+        $('ul#list li:odd').css('background-color', 'grey');
+        //-----------------------------------------------------------
+        //for removing list's bullets :
+        //$('ul#list li:nth-child(3n)').css('list-style', 'none')
+        //-------------------------------------------------
+        //for selecting by type="" in every tag:
+        //$(':button').hide();
+        //$(':text').hide();
+        //---------------------------------------------
+        //for changing all hrefs & do something to Them:
+        //$('[href]').css('color', 'red')
+        //$('a[href="https://www.github.com"]').css('color', 'green')
+        //------------------------------------------------
+        //for hiding every thing in our page:
+        //$('*').hide();
+        //-------------------------------
+        $('#selcbtn').click(function () {
+            alert('You Are Already in Selectors!');
+        });
+
+        $('ul#list').css('width', '15%')
+    </script>
+</body>
+
+</html>
