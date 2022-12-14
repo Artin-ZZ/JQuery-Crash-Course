@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Crash Course | Animations & Effects</title>
+
+    <!--Importing JQuery-->
+    <script src="JQueryAssets/jquery-3.6.1.min.js"></script>
+
+    <!--Importing css style file-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-color">
+    <header>
+        <h1>JQuery Crash Course</h1>
+        <nav class="navbar">
+            <a href="index.html"><button class="btn">Index</button></a>
+            <a href="Selectors.html"><button class="btn">Selectors</button></a>
+            <a href="Events.html"><button class="btn">Events</button></a>
+            <a href="FormEvents.html"><button class="btn">Form Events</button></a>
+            <a href="DOMman.html"><button class="btn">DOM Manipulation</button></a>
+            <button class="btn" id="animbtn">Animations</button>
+            <a href="Ajax.html"><button class="btn">Ajax</button></a>
+        </nav>
+    </header>
+
+
+    <div id="container">
+        <h3>JQuery Animations & Effects:</h3>
+        <hr>
+        <h4>Fade:</h4>
+        <button class="btn" id="btnfadeout">Button FadeOut</button>
+        <button class="btn" id="btnfadein">Button FadeIn</button>
+        <button class="btn" id="btnfadetog">Fade Toggle(In/Out)</button>
+        <button class="btn" id="btnfadeto">Fade To</button>
+        <hr>
+
+        <div class="box" id="box1">
+            <h1>Hello World</h1>
+        </div>
+
+
+        <hr>
+        <h4>Slide:</h4>
+        <button class="btn" id="Slidedown">Slide Down</button>
+        <button class="btn" id="Slideup">Slide Up</button>
+        <button class="btn" id="slidetog">Slide Toggle(Up/Down)</button>
+        <button class="btn" id="stop">Stop</button>
+        <hr>
+
+        <div class="box" id="box2">
+            <h1>Hello World</h1>
+        </div>
+
+
+        <hr>
+        <h4>Animate:</h4>
+        <button class="btn" id="mleft">Move Left</button>
+        <button class="btn" id="mright">Move Right</button>
+        <button class="btn" id="maround">Move Around</button>
+        <hr>
+
+        <div id="boxred">
+        </div>
+    </div>
+
+    <script src="JQueryAssets/animations.js"></script>
+</body>
+
+</html>
