@@ -5,15 +5,15 @@ JQuery Crash Course
 
 
 ##Events:
-	#*Mouse Events:
-		on()
-		dblclick()
-		trigger()
-		click()
-		dblclick()
-		mouseenter()
-		mouseleave()
-		hover()
+	*Mouse Events:
+		*on()
+		*dblclick()
+		*trigger()
+		*click()
+		*dblclick()
+		*mouseenter()
+		*mouseleave()
+		*hover()
 
 		*click(): --> in Higher Version of jq this method is depreciated insted use on() / trigger()
 			hide()
