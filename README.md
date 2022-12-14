@@ -5,15 +5,16 @@ JQuery Crash Course
 
 
 ##Events:
+
 	*Mouse Events:
-			on()
-			dblclick()
-			trigger()
-			click()
-			dblclick()
-			mouseenter()
-			mouseleave()
-			hover()
+		on()
+		dblclick()
+		trigger()
+		click()
+		dblclick()
+		mouseenter()
+		mouseleave()
+		hover()
 
 		*click(): --> in Higher Version of jq this method is depreciated insted use on() / trigger()
 			hide()
@@ -32,6 +33,7 @@ JQuery Crash Course
 		unload()
 
 ##jQuery Effects:
+
 	*Fade:
 		/*These Functions also can get 'fast'/'slow'/numeric time in seconds params : -> $('selector').fadeIn('slow') or 'fast' or fadeIn(3000)
 		You Can Also Pass in a Callable Function To Do Something after the animation is done -> fadeIn(3000, function(){some shit};);
@@ -51,6 +53,7 @@ JQuery Crash Course
 		animate()
 
 ##jQuery Traversing - Ancestors:
+
 	*funcs:
 		parent()
 		parents()
@@ -77,6 +80,7 @@ JQuery Crash Course
 		filter()
 
 ##jQuery HTML & Css:
+
 	*Get:
 		text()
 		html()
@@ -99,6 +103,7 @@ JQuery Crash Course
 		toggleClass()
 		css()
 ##jQuery Dimension:
+
 	*Methods:
 		width()
 		height()
@@ -108,6 +113,7 @@ JQuery Crash Course
 		outerHeight()
 
 ##JQuery Ajax:
+
 	*load:
 		load() --> $(selector).load(URL,data,callback);
 
