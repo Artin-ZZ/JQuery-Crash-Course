@@ -2,10 +2,10 @@
 JQuery Crash Course
 
 
-#JQuery Functions:::>
+
 
 ##Events:
-	*Mouse Events:
+	#*Mouse Events:
 		on()
 		dblclick()
 		trigger()
