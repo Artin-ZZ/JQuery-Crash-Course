@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Crash Course | Ajax</title>
+
+    <!--Importing JQuery-->
+    <script src="JQueryAssets/jquery-3.6.1.min.js"></script>
+
+    <!--Importing css style file-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="JQueryAssets/Ajax.js"></script>
+</head>
+
+<body class="bg-color">
+    <header>
+        <h1>JQuery Crash Course</h1>
+        <nav class="navbar">
+            <a href="index.html"><button class="btn">Index</button></a>
+            <a href="Selectors.html"><button class="btn">Selectors</button></a>
+            <a href="Events.html"><button class="btn">Events</button></a>
+            <a href="FormEvents.html"><button class="btn">Form Events</button></a>
+            <a href="DOMman.html"><button class="btn">DOM Manipulation</button></a>
+            <a href="Animations.html"><button class="btn">Animations</button></a>
+            <button class="btn" id="ajbtn">Ajax</button>
+        </nav>
+    </header>
+
+    <div id="container">
+        <div id="test"></div>
+        <!-- <hr>
+        <h4>Names:</h4>
+        <ul id="mlist"></ul>
+        <h4>Emails:</h4>
+        <ul id="elist"></ul> -->
+        <form id="postform" action="https://jsonplaceholder.typicode.com/posts">
+            <h3 class="h3">Add Post:</h3>
+            <br>
+            <input type="text" id="title" placeholder="Title">
+            <br>
+            <br>
+            <textarea id="body" placeholder="Body"></textarea>
+            <br>
+            <input type="submit" class="btns" value="Submit">
+            <br>
+        </form>
+    </div>
+</body>
+
+</html>
