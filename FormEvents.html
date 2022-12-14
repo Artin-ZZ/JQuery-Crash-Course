@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Crash Course | Form Events</title>
+
+    <!--Importing JQuery-->
+    <script src="JQueryAssets/jquery-3.6.1.min.js"></script>
+
+    <!--Importing css style file-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-color">
+    <header>
+        <h1>JQuery Crash Course</h1>
+        <nav class="navbar">
+            <a href="index.html"><button class="btn">Index</button></a>
+            <a href="Selectors.html"><button class="btn">Selectors</button></a>
+            <a href="Events.html"><button class="btn">Events</button></a>
+            <button class="btn" id="frmevbtn">Form Events</button>
+            <a href="DOMman.html"><button class="btn">DOM Manipulation</button></a>
+            <a href="Animations.html"><button class="btn">Animations</button></a>
+            <a href="Ajax.html"><button class="btn">Ajax</button></a>
+        </nav>
+    </header>
+    <div id="container">
+        <h3>Form Events:</h3>
+        <hr>
+
+        <!--Form Tag-->
+        <form id="form">
+            <label>Name:</label><br>
+            <input type="text" id="name" name="name">
+            <br>
+            <label>Email:</label><br>
+            <input type="email" id="email" name="email">
+            <br>
+            <label>Gender:</label><br>
+            <select name="gender" id="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
+            </select><br>
+            <input type="submit" value="Submit" class="btn">
+
+        </form>
+    </div>
+
+    <script src="JQueryAssets/formEvents.js"></script>
+</body>
+
+</html>
